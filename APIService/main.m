@@ -13,10 +13,13 @@
 
 int main(int argc, const char *argv[])
 {
-  EHAPIServiceDelegate *delegate = [[EHAPIServiceDelegate alloc] init];
-  NSXPCListener *listener = [NSXPCListener serviceListener];
-  listener.delegate = delegate;
-  [listener resume];
+  @autoreleasepool {
+    EHAPIServiceDelegate *delegate = [[EHAPIServiceDelegate alloc] init];
+    NSXPCListener *listener = [NSXPCListener serviceListener];
+    listener.delegate = delegate;
+    [listener resume];
+  }
   
   exit(EXIT_FAILURE);
+  return 0;
 }

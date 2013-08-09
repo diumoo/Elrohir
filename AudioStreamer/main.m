@@ -13,10 +13,13 @@
 	
 int main(int argc, const char *argv[])
 {
-  EHAudioStreamerDelegate *delegate = [[EHAudioStreamerDelegate alloc] init];
-  NSXPCListener *listener = [NSXPCListener serviceListener];
-  listener.delegate = delegate;
-  [listener resume];
+  @autoreleasepool {
+    EHAudioStreamerDelegate *delegate = [[EHAudioStreamerDelegate alloc] init];
+    NSXPCListener *listener = [NSXPCListener serviceListener];
+    listener.delegate = delegate;
+    [listener resume];
+  }
   
   exit(EXIT_FAILURE);
+  return 0;
 }
