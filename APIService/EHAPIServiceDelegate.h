@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "EHAPIService.h"
 
-@interface EHAPIServiceDelegate : NSObject <NSXPCListenerDelegate>
+@interface EHAPIServiceDelegate : NSObject <NSXPCListenerDelegate, EHAPIService>
 
 @end
