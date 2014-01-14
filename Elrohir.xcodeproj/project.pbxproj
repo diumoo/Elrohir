@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		52045A4B17BB26BA0041FAAA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DBC63DBBB7A240D49193D8EA /* libPods.a */; };
-		52045A4C17BB27170041FAAA /* DOULogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C8D47417B8CC25007491AF /* DOULogger.m */; };
 		52045A4D17BB27A60041FAAA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5214ECA817B3915F00CF355D /* Cocoa.framework */; };
 		52045A4F17BB2ECB0041FAAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5214ECAD17B3915F00CF355D /* Foundation.framework */; };
 		52045A5117BB31690041FAAA /* com.douban.Elrohir.APIService.xpc in CopyFiles */ = {isa = PBXBuildFile; fileRef = 52C2CA2017B3ABE5009736D2 /* com.douban.Elrohir.APIService.xpc */; };
@@ -23,13 +22,8 @@
 		5214ECD017B3916000CF355D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5214ECCE17B3916000CF355D /* InfoPlist.strings */; };
 		5214ECD317B3916000CF355D /* ElrohirTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5214ECD217B3916000CF355D /* ElrohirTests.m */; };
 		5235216017B8E48800116B31 /* EHAPIServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5235215F17B8E48800116B31 /* EHAPIServiceTests.m */; };
-		52C2CA0F17B3ABBA009736D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C2CA0E17B3ABBA009736D2 /* Foundation.framework */; };
-		52C2CA1517B3ABBA009736D2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 52C2CA1317B3ABBA009736D2 /* InfoPlist.strings */; };
-		52C2CA1817B3ABBA009736D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C2CA1717B3ABBA009736D2 /* main.m */; };
 		52C2CA2717B3ABE5009736D2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 52C2CA2517B3ABE5009736D2 /* InfoPlist.strings */; };
 		52C2CA2A17B3ABE5009736D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C2CA2917B3ABE5009736D2 /* main.m */; };
-		52C8D47517B8CC25007491AF /* DOULogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C8D47417B8CC25007491AF /* DOULogger.m */; };
-		52DE15DA17B47AD6005F16D3 /* EHAudioStreamerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52DE15D917B47AD6005F16D3 /* EHAudioStreamerDelegate.m */; };
 		52DE15DE17B47D77005F16D3 /* EHAPIServiceDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52DE15DD17B47D77005F16D3 /* EHAPIServiceDelegate.m */; };
 		53F3E652037544EB87F6B99B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DBC63DBBB7A240D49193D8EA /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -86,22 +80,13 @@
 		5214ECD217B3916000CF355D /* ElrohirTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ElrohirTests.m; sourceTree = "<group>"; };
 		5235215E17B8E48800116B31 /* EHAPIServiceTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHAPIServiceTests.h; sourceTree = "<group>"; };
 		5235215F17B8E48800116B31 /* EHAPIServiceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHAPIServiceTests.m; sourceTree = "<group>"; };
-		52C2CA0D17B3ABBA009736D2 /* com.douban.Elrohir.AudioStreamer.xpc */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = com.douban.Elrohir.AudioStreamer.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
 		52C2CA0E17B3ABBA009736D2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		52C2CA1217B3ABBA009736D2 /* AudioStreamer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AudioStreamer-Info.plist"; sourceTree = "<group>"; };
-		52C2CA1417B3ABBA009736D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		52C2CA1617B3ABBA009736D2 /* AudioStreamer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AudioStreamer-Prefix.pch"; sourceTree = "<group>"; };
-		52C2CA1717B3ABBA009736D2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		52C2CA2017B3ABE5009736D2 /* com.douban.Elrohir.APIService.xpc */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = com.douban.Elrohir.APIService.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
 		52C2CA2417B3ABE5009736D2 /* APIService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "APIService-Info.plist"; sourceTree = "<group>"; };
 		52C2CA2617B3ABE5009736D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		52C2CA2817B3ABE5009736D2 /* APIService-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "APIService-Prefix.pch"; sourceTree = "<group>"; };
 		52C2CA2917B3ABE5009736D2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		52C8D47117B87FA1007491AF /* EHAPIService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHAPIService.h; sourceTree = "<group>"; };
-		52C8D47317B8CC25007491AF /* DOULogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOULogger.h; sourceTree = "<group>"; };
-		52C8D47417B8CC25007491AF /* DOULogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOULogger.m; sourceTree = "<group>"; };
-		52DE15D817B47AD6005F16D3 /* EHAudioStreamerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHAudioStreamerDelegate.h; sourceTree = "<group>"; };
-		52DE15D917B47AD6005F16D3 /* EHAudioStreamerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHAudioStreamerDelegate.m; sourceTree = "<group>"; };
 		52DE15DC17B47D77005F16D3 /* EHAPIServiceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHAPIServiceDelegate.h; sourceTree = "<group>"; };
 		52DE15DD17B47D77005F16D3 /* EHAPIServiceDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHAPIServiceDelegate.m; sourceTree = "<group>"; };
 		CFF9562DF95A45D4B0E1A4F4 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
@@ -127,14 +112,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		52C2CA0A17B3ABBA009736D2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				52C2CA0F17B3ABBA009736D2 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		52C2CA1D17B3ABE5009736D2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -153,7 +130,6 @@
 			children = (
 				5214ECAE17B3915F00CF355D /* Elrohir */,
 				5214ECCB17B3916000CF355D /* ElrohirTests */,
-				52C2CA1017B3ABBA009736D2 /* AudioStreamer */,
 				52C2CA2217B3ABE5009736D2 /* APIService */,
 				5214ECA717B3915F00CF355D /* Frameworks */,
 				5214ECA617B3915F00CF355D /* Products */,
@@ -166,7 +142,6 @@
 			children = (
 				5214ECA517B3915F00CF355D /* Elrohir.app */,
 				5214ECC517B3916000CF355D /* ElrohirTests.octest */,
-				52C2CA0D17B3ABBA009736D2 /* com.douban.Elrohir.AudioStreamer.xpc */,
 				52C2CA2017B3ABE5009736D2 /* com.douban.Elrohir.APIService.xpc */,
 			);
 			name = Products;
@@ -208,7 +183,6 @@
 		5214ECAF17B3915F00CF355D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				52C8D47217B8CC05007491AF /* DOULogger */,
 				5214ECB017B3915F00CF355D /* Elrohir-Info.plist */,
 				5214ECB117B3915F00CF355D /* InfoPlist.strings */,
 				5214ECB417B3915F00CF355D /* main.m */,
@@ -247,26 +221,6 @@
 			name = EHAPIServiceTests;
 			sourceTree = "<group>";
 		};
-		52C2CA1017B3ABBA009736D2 /* AudioStreamer */ = {
-			isa = PBXGroup;
-			children = (
-				52DE15D717B47AAF005F16D3 /* EHAudioStreamerDelegate */,
-				52C2CA1117B3ABBA009736D2 /* Supporting Files */,
-			);
-			path = AudioStreamer;
-			sourceTree = "<group>";
-		};
-		52C2CA1117B3ABBA009736D2 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				52C2CA1717B3ABBA009736D2 /* main.m */,
-				52C2CA1217B3ABBA009736D2 /* AudioStreamer-Info.plist */,
-				52C2CA1317B3ABBA009736D2 /* InfoPlist.strings */,
-				52C2CA1617B3ABBA009736D2 /* AudioStreamer-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		52C2CA2217B3ABE5009736D2 /* APIService */ = {
 			isa = PBXGroup;
 			children = (
@@ -286,24 +240,6 @@
 				52C2CA2817B3ABE5009736D2 /* APIService-Prefix.pch */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		52C8D47217B8CC05007491AF /* DOULogger */ = {
-			isa = PBXGroup;
-			children = (
-				52C8D47317B8CC25007491AF /* DOULogger.h */,
-				52C8D47417B8CC25007491AF /* DOULogger.m */,
-			);
-			name = DOULogger;
-			sourceTree = "<group>";
-		};
-		52DE15D717B47AAF005F16D3 /* EHAudioStreamerDelegate */ = {
-			isa = PBXGroup;
-			children = (
-				52DE15D817B47AD6005F16D3 /* EHAudioStreamerDelegate.h */,
-				52DE15D917B47AD6005F16D3 /* EHAudioStreamerDelegate.m */,
-			);
-			name = EHAudioStreamerDelegate;
 			sourceTree = "<group>";
 		};
 		52DE15DB17B47AE0005F16D3 /* EHAPIServiceDelegate */ = {
@@ -359,23 +295,6 @@
 			productReference = 5214ECC517B3916000CF355D /* ElrohirTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
-		52C2CA0C17B3ABBA009736D2 /* AudioStreamer */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 52C2CA1917B3ABBA009736D2 /* Build configuration list for PBXNativeTarget "AudioStreamer" */;
-			buildPhases = (
-				52C2CA0917B3ABBA009736D2 /* Sources */,
-				52C2CA0A17B3ABBA009736D2 /* Frameworks */,
-				52C2CA0B17B3ABBA009736D2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = AudioStreamer;
-			productName = AudioStreamer;
-			productReference = 52C2CA0D17B3ABBA009736D2 /* com.douban.Elrohir.AudioStreamer.xpc */;
-			productType = "com.apple.product-type.bundle";
-		};
 		52C2CA1F17B3ABE5009736D2 /* APIService */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52C2CA2B17B3ABE5009736D2 /* Build configuration list for PBXNativeTarget "APIService" */;
@@ -417,7 +336,6 @@
 			targets = (
 				5214ECA417B3915F00CF355D /* Elrohir */,
 				5214ECC417B3916000CF355D /* ElrohirTests */,
-				52C2CA0C17B3ABBA009736D2 /* AudioStreamer */,
 				52C2CA1F17B3ABE5009736D2 /* APIService */,
 			);
 		};
@@ -439,14 +357,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5214ECD017B3916000CF355D /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		52C2CA0B17B3ABBA009736D2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				52C2CA1517B3ABBA009736D2 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,7 +436,6 @@
 			files = (
 				5214ECB517B3915F00CF355D /* main.m in Sources */,
 				5214ECBC17B3915F00CF355D /* EHAppDelegate.m in Sources */,
-				52C8D47517B8CC25007491AF /* DOULogger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,20 +448,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		52C2CA0917B3ABBA009736D2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				52C2CA1817B3ABBA009736D2 /* main.m in Sources */,
-				52DE15DA17B47AD6005F16D3 /* EHAudioStreamerDelegate.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		52C2CA1C17B3ABE5009736D2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52045A4C17BB27170041FAAA /* DOULogger.m in Sources */,
 				52C2CA2A17B3ABE5009736D2 /* main.m in Sources */,
 				52DE15DE17B47D77005F16D3 /* EHAPIServiceDelegate.m in Sources */,
 			);
@@ -602,14 +501,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				5214ECCF17B3916000CF355D /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		52C2CA1317B3ABBA009736D2 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				52C2CA1417B3ABBA009736D2 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -744,34 +635,6 @@
 			};
 			name = Release;
 		};
-		52C2CA1A17B3ABBA009736D2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CFF9562DF95A45D4B0E1A4F4 /* Pods.xcconfig */;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AudioStreamer/AudioStreamer-Prefix.pch";
-				INFOPLIST_FILE = "AudioStreamer/AudioStreamer-Info.plist";
-				MACH_O_TYPE = mh_execute;
-				PRODUCT_NAME = "com.douban.Elrohir.$(TARGET_NAME:rfc1034identifier)";
-				WRAPPER_EXTENSION = xpc;
-			};
-			name = Debug;
-		};
-		52C2CA1B17B3ABBA009736D2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CFF9562DF95A45D4B0E1A4F4 /* Pods.xcconfig */;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AudioStreamer/AudioStreamer-Prefix.pch";
-				INFOPLIST_FILE = "AudioStreamer/AudioStreamer-Info.plist";
-				MACH_O_TYPE = mh_execute;
-				PRODUCT_NAME = "com.douban.Elrohir.$(TARGET_NAME:rfc1034identifier)";
-				WRAPPER_EXTENSION = xpc;
-			};
-			name = Release;
-		};
 		52C2CA2C17B3ABE5009736D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CFF9562DF95A45D4B0E1A4F4 /* Pods.xcconfig */;
@@ -826,15 +689,6 @@
 			buildConfigurations = (
 				5214ECDA17B3916000CF355D /* Debug */,
 				5214ECDB17B3916000CF355D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		52C2CA1917B3ABBA009736D2 /* Build configuration list for PBXNativeTarget "AudioStreamer" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				52C2CA1A17B3ABBA009736D2 /* Debug */,
-				52C2CA1B17B3ABBA009736D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
