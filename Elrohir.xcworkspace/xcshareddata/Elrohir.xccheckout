@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>80CFAEB9-D9DD-4EBD-97E2-EF014A9A8509</string>
+	<string>5E14685B-1D76-4A1F-9DD4-1895E6970B40</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Elrohir</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>6DD4DE81-663C-4CF4-A70F-8604799142F2</key>
-		<string>ssh://github.com/shanzi/Elrohir.git</string>
+		<key>4C2804CE-39AB-4A0E-9142-A62A39FA0CB0</key>
+		<string>https://github.com/yechunxiao19/Elrohir.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Elrohir.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>6DD4DE81-663C-4CF4-A70F-8604799142F2</key>
+		<key>4C2804CE-39AB-4A0E-9142-A62A39FA0CB0</key>
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/shanzi/Elrohir.git</string>
+	<string>https://github.com/yechunxiao19/Elrohir.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>6DD4DE81-663C-4CF4-A70F-8604799142F2</string>
+	<string>4C2804CE-39AB-4A0E-9142-A62A39FA0CB0</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>6DD4DE81-663C-4CF4-A70F-8604799142F2</string>
+			<string>4C2804CE-39AB-4A0E-9142-A62A39FA0CB0</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Elrohir</string>
 		</dict>
