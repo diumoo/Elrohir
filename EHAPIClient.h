@@ -46,5 +46,14 @@
                           limit:(NSInteger)limit
                        callback:(void (^)(NSDictionary *))callback;
 
+#pragma mark - Playlist
+- (void)fetchPlaylistWithType:(NSString *)type
+                          sid:(NSInteger)sid
+                      channel:(NSInteger)channel
+                           pt:(float)pt
+                           pb:(NSInteger)pb
+                         kbps:(NSInteger)kbps
+                      isLogin:(BOOL)isLogin
+                     callback:(void (^)(NSDictionary *))callback;
 
 @end
