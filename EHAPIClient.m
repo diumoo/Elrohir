@@ -378,4 +378,29 @@
                        callback:callback];
 }
 
+#pragma mark - Playlist
+- (void)fetchPlaylistWithType:(NSString *)type
+                          sid:(NSInteger)sid
+                      channel:(NSInteger)channel
+                           pt:(float)pt
+                           pb:(NSInteger)pb
+                         kbps:(NSInteger)kbps
+                      isLogin:(BOOL)isLogin
+                     callback:(void (^)(NSDictionary *))callback
+{
+    NSDictionary *params = nil;
+    params = @{@"type":type,
+               @"sid":@(sid),
+               @"channel":@(channel),
+               @"pt":@(pt),
+               @"pb":@(pb),
+               @"kbps":@(kbps),
+               };
+    [self sendRequestWithMethod:@"GET"
+                        APIPath:EHAPIPlaylistPath
+                         params:params
+                  loginRequired:isLogin
+                       callback:callback];
+}
+
 @end
