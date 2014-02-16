@@ -146,11 +146,6 @@
     }
 }
 
-- (NSDictionary *)eventsFromJsonDict:(NSDictionary *)jsonDict
-{
-    return nil;
-}
-
 #pragma mark - login, logout and register
 - (void)loginWithUsername:(NSString *)username
                  password:(NSString *)password
@@ -480,10 +475,13 @@
 }
 
 - (void)fetchEventUserWishedWithId:(NSString *)id
+                            status:(NSString*)status
                            isLogin:(BOOL)isLogin
                           callback:(void (^)(NSDictionary *))callback
 {
     NSDictionary *params = nil;
+    params = @{@"status":status,
+               };
     [self sendRequestWithMethod:@"GET"
                         APIPath:EHAPIEventUserWishedPath(id)
                          params:params
@@ -492,9 +490,16 @@
 }
 
 - (void)fetchEventListWithisLogin:(BOOL)isLogin
+                              locId:(NSInteger)locId
+                          dayType:(NSString*)dayType
+                             type:(NSString*)type
                     callback:(void (^)(NSDictionary *))callback
 {
     NSDictionary *params = nil;
+    params = @{@"type":type,
+               @"dayType":dayType,
+               @"locId":@(locId),
+               };
     [self sendRequestWithMethod:@"GET"
                         APIPath:EHAPIEventListPath
                          params:params
@@ -526,10 +531,13 @@
 }
 
 - (void)participateEventWithId:(NSString *)id
-                isLogin:(BOOL)isLogin
-               callback:(void (^)(NSDictionary *))callback
+                        isLogin:(BOOL)isLogin
+                participateDate:(NSString *)participateDate
+                        callback:(void (^)(NSDictionary *))callback
 {
     NSDictionary *params = nil;
+    params = @{@"participate_date":participateDate,
+               };
     [self sendRequestWithMethod:@"POST"
                         APIPath:EHAPIEventParticipantsPath(id)
                          params:params
@@ -538,8 +546,8 @@
 }
 
 - (void)notParticipateEventWithId:(NSString *)id
-                    isLogin:(BOOL)isLogin
-                   callback:(void (^)(NSDictionary *))callback
+                        isLogin:(BOOL)isLogin
+                        callback:(void (^)(NSDictionary *))callback
 {
     NSDictionary *params = nil;
     [self sendRequestWithMethod:@"DELETE"
