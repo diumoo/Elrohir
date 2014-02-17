@@ -159,7 +159,7 @@
                @"redirect_uri":EHAPPRedirectUri,
                @"grant_type":EHAPPGrantType,
                @"username":username,
-               @"password":password
+               @"password":password,
                };
     NSURL *baseUrl = [NSURL URLWithString:EHBaseUrl];
     AFHTTPClient *authClient = [AFHTTPClient clientWithBaseURL:baseUrl];
@@ -167,7 +167,7 @@
     NSMutableURLRequest *request = [authClient requestWithMethod:@"POST"
                                                             path:EHAPIAuthPath
                                                       parameters:params];
-    
+
     AFJSONRequestOperation *operation = nil;
     operation = [AFJSONRequestOperation
                  JSONRequestOperationWithRequest:request
@@ -490,15 +490,15 @@
 }
 
 - (void)fetchEventListWithisLogin:(BOOL)isLogin
-                              locId:(NSInteger)locId
+                              locId:(NSString*)locId
                           dayType:(NSString*)dayType
                              type:(NSString*)type
                     callback:(void (^)(NSDictionary *))callback
 {
     NSDictionary *params = nil;
     params = @{@"type":type,
-               @"dayType":dayType,
-               @"locId":@(locId),
+               @"day_type":dayType,
+               @"loc":locId,
                };
     [self sendRequestWithMethod:@"GET"
                         APIPath:EHAPIEventListPath
