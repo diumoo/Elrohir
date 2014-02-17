@@ -7,6 +7,7 @@
 //
 
 #import "EHIAppDelegate.h"
+#import "EHViewController.h"
 
 @implementation EHIAppDelegate
 
@@ -18,6 +19,7 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    self.window.rootViewController = [[EHViewController alloc] init];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

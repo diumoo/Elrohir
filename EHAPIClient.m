@@ -42,8 +42,8 @@
 #define EHAPIEventUserParticipatedPath(ID) [NSString stringWithFormat:@"%@%@", @"/v2/event/user_participated/", ID]
 #define EHAPIEventUserWishedPath(ID) [NSString stringWithFormat:@"%@%@", @"/v2/event/user_wished/", ID]
 #define EHAPIEventListPath @"/v2/event/list"
-#define EHAPILocPath(ID) [NSString stringWithFormat:@"%@%@", @"/v2/loc/", ID]
-#define EHAPILocListPath @"/v2/loc/list"
+#define EHAPILocationPath(ID) [NSString stringWithFormat:@"%@%@", @"/v2/loc/", ID]
+#define EHAPILocationListPath @"/v2/loc/list"
 
 #pragma mark - Error Message
 
@@ -507,24 +507,24 @@
                        callback:callback];
 }
 
-- (void)fetchLocListWithisLogin:(BOOL)isLogin
+- (void)fetchLocationListWithisLogin:(BOOL)isLogin
                          callback:(void (^)(NSDictionary *))callback
 {
     NSDictionary *params = nil;
     [self sendRequestWithMethod:@"GET"
-                        APIPath:EHAPILocListPath
+                        APIPath:EHAPILocationListPath
                          params:params
                   loginRequired:isLogin
                        callback:callback];
 }
 
-- (void)fetchLocWithId:(NSString *)id
+- (void)fetchLocationWithId:(NSString *)id
                 isLogin:(BOOL)isLogin
               callback:(void (^)(NSDictionary *))callback
 {
     NSDictionary *params = nil;
     [self sendRequestWithMethod:@"GET"
-                        APIPath:EHAPILocPath(id)
+                        APIPath:EHAPILocationPath(id)
                          params:params
                   loginRequired:isLogin
                        callback:callback];
@@ -545,7 +545,7 @@
                        callback:callback];
 }
 
-- (void)notParticipateEventWithId:(NSString *)id
+- (void)unParticipateEventWithId:(NSString *)id
                         isLogin:(BOOL)isLogin
                         callback:(void (^)(NSDictionary *))callback
 {
@@ -557,7 +557,7 @@
                        callback:callback];
 }
 
-- (void)wishEventWithId:(NSString *)id
+- (void)wishToJoinEventWithId:(NSString *)id
                 isLogin:(BOOL)isLogin
                 callback:(void (^)(NSDictionary *))callback
 {
@@ -569,7 +569,7 @@
                        callback:callback];
 }
 
-- (void)notWishEventWithId:(NSString *)id
+- (void)unWishToJoinEventWithId:(NSString *)id
                 isLogin:(BOOL)isLogin
                 callback:(void (^)(NSDictionary *))callback
 {
