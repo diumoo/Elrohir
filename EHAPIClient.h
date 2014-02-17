@@ -77,7 +77,7 @@
                            isLogin:(BOOL)isLogin
                           callback:(void (^)(NSDictionary *))callback;
 - (void)fetchEventListWithisLogin:(BOOL)isLogin
-                            locId:(NSInteger)locId
+                            locId:(NSString*)locId
                           dayType:(NSString*)dayType
                              type:(NSString*)type
                          callback:(void (^)(NSDictionary *))callback;
