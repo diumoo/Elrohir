@@ -81,22 +81,22 @@
                           dayType:(NSString*)dayType
                              type:(NSString*)type
                          callback:(void (^)(NSDictionary *))callback;
-- (void)fetchLocListWithisLogin:(BOOL)isLogin
+- (void)fetchLocationListWithisLogin:(BOOL)isLogin
                        callback:(void (^)(NSDictionary *))callback;
-- (void)fetchLocWithId:(NSString *)id
+- (void)fetchLocationWithId:(NSString *)id
                isLogin:(BOOL)isLogin
             callback:(void (^)(NSDictionary *))callback;
 - (void)participateEventWithId:(NSString *)id
                        isLogin:(BOOL)isLogin
                participateDate:(NSString *)participateDate
                       callback:(void (^)(NSDictionary *))callback;
-- (void)notParticipateEventWithId:(NSString *)id
+- (void)unParticipateEventWithId:(NSString *)id
                           isLogin:(BOOL)isLogin
                          callback:(void (^)(NSDictionary *))callback;
-- (void)wishEventWithId:(NSString *)id
+- (void)wishToJoinEventWithId:(NSString *)id
                 isLogin:(BOOL)isLogin
                callback:(void (^)(NSDictionary *))callback;
-- (void)notWishEventWithId:(NSString *)id
+- (void)unWishToJoinEventWithId:(NSString *)id
                    isLogin:(BOOL)isLogin
                   callback:(void (^)(NSDictionary *))callback;
 
