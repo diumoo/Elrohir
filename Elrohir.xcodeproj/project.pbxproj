@@ -26,6 +26,7 @@
 		52C2CA2A17B3ABE5009736D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C2CA2917B3ABE5009736D2 /* main.m */; };
 		52DE15DE17B47D77005F16D3 /* EHAPIServiceDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52DE15DD17B47D77005F16D3 /* EHAPIServiceDelegate.m */; };
 		53F3E652037544EB87F6B99B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DBC63DBBB7A240D49193D8EA /* libPods.a */; };
+		A486020202924E80B010C49F /* libPods-Elrohir:ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7624DCC60287405CBB76110C /* libPods-Elrohir:ios.a */; };
 		BC69E0CA1885653800433C41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C2CA0E17B3ABBA009736D2 /* Foundation.framework */; };
 		BC69E0CC1885653800433C41 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC69E0CB1885653800433C41 /* CoreGraphics.framework */; };
 		BC69E0CE1885653800433C41 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC69E0CD1885653800433C41 /* UIKit.framework */; };
@@ -42,6 +43,9 @@
 		BC69E0F31885653800433C41 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC69E0F11885653800433C41 /* InfoPlist.strings */; };
 		BC69E0F51885653800433C41 /* Elrohir_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC69E0F41885653800433C41 /* Elrohir_iosTests.m */; };
 		BC69E0FF18866EF600433C41 /* EHAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BC69E0FE18866EF600433C41 /* EHAPIClient.m */; };
+		BCB8849618B118E4003FE090 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB8849518B118E4003FE090 /* MobileCoreServices.framework */; };
+		BCB8849918B11F6C003FE090 /* EHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB8849818B11F6C003FE090 /* EHViewController.m */; };
+		BCB8849A18B1F77D003FE090 /* EHAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BC69E0FE18866EF600433C41 /* EHAPIClient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +86,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0E98DB68D3E9473E930F3919 /* Pods-Elrohir:ios.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elrohir:ios.xcconfig"; path = "Pods/Pods-Elrohir:ios.xcconfig"; sourceTree = "<group>"; };
 		5214ECA517B3915F00CF355D /* Elrohir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Elrohir.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5214ECA817B3915F00CF355D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		5214ECAB17B3915F00CF355D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -112,6 +117,7 @@
 		52C8D47117B87FA1007491AF /* EHAPIService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHAPIService.h; sourceTree = "<group>"; };
 		52DE15DC17B47D77005F16D3 /* EHAPIServiceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHAPIServiceDelegate.h; sourceTree = "<group>"; };
 		52DE15DD17B47D77005F16D3 /* EHAPIServiceDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHAPIServiceDelegate.m; sourceTree = "<group>"; };
+		7624DCC60287405CBB76110C /* libPods-Elrohir:ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Elrohir:ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC69E0C91885653800433C41 /* Elrohir:ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Elrohir:ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC69E0CB1885653800433C41 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		BC69E0CD1885653800433C41 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -131,6 +137,9 @@
 		BC69E0F41885653800433C41 /* Elrohir_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Elrohir_iosTests.m; sourceTree = "<group>"; };
 		BC69E0FD18866EF600433C41 /* EHAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHAPIClient.h; sourceTree = "<group>"; };
 		BC69E0FE18866EF600433C41 /* EHAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHAPIClient.m; sourceTree = "<group>"; };
+		BCB8849518B118E4003FE090 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		BCB8849718B11F6C003FE090 /* EHViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHViewController.h; sourceTree = "<group>"; };
+		BCB8849818B11F6C003FE090 /* EHViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHViewController.m; sourceTree = "<group>"; };
 		CFF9562DF95A45D4B0E1A4F4 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		DBC63DBBB7A240D49193D8EA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -168,10 +177,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCB8849618B118E4003FE090 /* MobileCoreServices.framework in Frameworks */,
 				BC69E0CC1885653800433C41 /* CoreGraphics.framework in Frameworks */,
 				BC69E0D01885653800433C41 /* CoreData.framework in Frameworks */,
 				BC69E0CE1885653800433C41 /* UIKit.framework in Frameworks */,
 				BC69E0CA1885653800433C41 /* Foundation.framework in Frameworks */,
+				A486020202924E80B010C49F /* libPods-Elrohir:ios.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +212,7 @@
 				5214ECA717B3915F00CF355D /* Frameworks */,
 				5214ECA617B3915F00CF355D /* Products */,
 				CFF9562DF95A45D4B0E1A4F4 /* Pods.xcconfig */,
+				0E98DB68D3E9473E930F3919 /* Pods-Elrohir:ios.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -219,6 +231,7 @@
 		5214ECA717B3915F00CF355D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BCB8849518B118E4003FE090 /* MobileCoreServices.framework */,
 				5214ECA817B3915F00CF355D /* Cocoa.framework */,
 				5214ECC617B3916000CF355D /* SenTestingKit.framework */,
 				52C2CA0E17B3ABBA009736D2 /* Foundation.framework */,
@@ -228,6 +241,7 @@
 				BC69E0E71885653800433C41 /* XCTest.framework */,
 				5214ECAA17B3915F00CF355D /* Other Frameworks */,
 				DBC63DBBB7A240D49193D8EA /* libPods.a */,
+				7624DCC60287405CBB76110C /* libPods-Elrohir:ios.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -332,6 +346,8 @@
 				BC69E0E01885653800433C41 /* Images.xcassets */,
 				BC69E0DD1885653800433C41 /* Elrohir_ios.xcdatamodeld */,
 				BC69E0D21885653800433C41 /* Supporting Files */,
+				BCB8849718B11F6C003FE090 /* EHViewController.h */,
+				BCB8849818B11F6C003FE090 /* EHViewController.m */,
 			);
 			path = "Elrohir:ios";
 			sourceTree = "<group>";
@@ -439,9 +455,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC69E0FA1885653800433C41 /* Build configuration list for PBXNativeTarget "Elrohir:ios" */;
 			buildPhases = (
+				8753D759DED5457C835CCD11 /* Check Pods Manifest.lock */,
 				BC69E0C51885653800433C41 /* Sources */,
 				BC69E0C61885653800433C41 /* Frameworks */,
 				BC69E0C71885653800433C41 /* Resources */,
+				1AA743B5F96E4E968C69BCFD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -553,6 +571,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1AA743B5F96E4E968C69BCFD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-Elrohir:ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5214ECC317B3916000CF355D /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -578,6 +611,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# xcode-build-bump.sh\n# @desc Auto-increment the build number every time the project is run.\n# @usage\n# 1. Select: your Target in Xcode\n# 2. Select: Build Phases Tab\n# 3. Select: Add Build Phase -> Add Run Script\n# 4. Paste code below in to new \"Run Script\" section\n# 5. Drag the \"Run Script\" below \"Link Binaries With Libraries\"\n# 6. Insure that your starting build number is set to a whole integer and not a float (e.g. 1, not 1.0)\n\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"";
+		};
+		8753D759DED5457C835CCD11 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
 		};
 		88EBD92547F2433DBFC43416 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -644,7 +692,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCB8849A18B1F77D003FE090 /* EHAPIClient.m in Sources */,
 				BC69E0D81885653800433C41 /* main.m in Sources */,
+				BCB8849918B11F6C003FE090 /* EHViewController.m in Sources */,
 				BC69E0DC1885653800433C41 /* EHIAppDelegate.m in Sources */,
 				BC69E0DF1885653800433C41 /* Elrohir_ios.xcdatamodeld in Sources */,
 			);
@@ -887,6 +937,7 @@
 		};
 		BC69E0F61885653800433C41 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E98DB68D3E9473E930F3919 /* Pods-Elrohir:ios.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -911,6 +962,15 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = "Elrohir:ios/Elrohir:ios-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					Security,
+					"-framework",
+					SystemConfiguration,
+					"-framework",
+					MobileCoreServices,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
@@ -919,6 +979,7 @@
 		};
 		BC69E0F71885653800433C41 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E98DB68D3E9473E930F3919 /* Pods-Elrohir:ios.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -940,6 +1001,15 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = "Elrohir:ios/Elrohir:ios-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					Security,
+					"-framework",
+					SystemConfiguration,
+					"-framework",
+					MobileCoreServices,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -1055,6 +1125,7 @@
 				BC69E0F71885653800433C41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BC69E0FB1885653800433C41 /* Build configuration list for PBXNativeTarget "Elrohir:iosTests" */ = {
 			isa = XCConfigurationList;
@@ -1063,6 +1134,7 @@
 				BC69E0F91885653800433C41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

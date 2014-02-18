@@ -56,4 +56,48 @@
                       isLogin:(BOOL)isLogin
                      callback:(void (^)(NSDictionary *))callback;
 
+#pragma mark - Event
+- (void)fetchEventWithId:(NSString *)id
+                 isLogin:(BOOL)isLogin
+                callback:(void (^)(NSDictionary *))callback;
+- (void)fetchEventParticipantsWithId:(NSString *)id
+                             isLogin:(BOOL)isLogin
+                            callback:(void (^)(NSDictionary *))callback;
+- (void)fetchEventWishersWithId:(NSString *)id
+                        isLogin:(BOOL)isLogin
+                       callback:(void (^)(NSDictionary *))callback;
+- (void)fetchEventUserCreatedWithId:(NSString *)id
+                            isLogin:(BOOL)isLogin
+                           callback:(void (^)(NSDictionary *))callback;
+- (void)fetchEventUserParticipatedWithId:(NSString *)id
+                                 isLogin:(BOOL)isLogin
+                                callback:(void (^)(NSDictionary *))callback;
+- (void)fetchEventUserWishedWithId:(NSString *)id
+                            status:(NSString*)status
+                           isLogin:(BOOL)isLogin
+                          callback:(void (^)(NSDictionary *))callback;
+- (void)fetchEventListWithisLogin:(BOOL)isLogin
+                            locId:(NSString*)locId
+                          dayType:(NSString*)dayType
+                             type:(NSString*)type
+                         callback:(void (^)(NSDictionary *))callback;
+- (void)fetchLocationListWithisLogin:(BOOL)isLogin
+                       callback:(void (^)(NSDictionary *))callback;
+- (void)fetchLocationWithId:(NSString *)id
+               isLogin:(BOOL)isLogin
+            callback:(void (^)(NSDictionary *))callback;
+- (void)participateEventWithId:(NSString *)id
+                       isLogin:(BOOL)isLogin
+               participateDate:(NSString *)participateDate
+                      callback:(void (^)(NSDictionary *))callback;
+- (void)unParticipateEventWithId:(NSString *)id
+                          isLogin:(BOOL)isLogin
+                         callback:(void (^)(NSDictionary *))callback;
+- (void)wishToJoinEventWithId:(NSString *)id
+                isLogin:(BOOL)isLogin
+               callback:(void (^)(NSDictionary *))callback;
+- (void)unWishToJoinEventWithId:(NSString *)id
+                   isLogin:(BOOL)isLogin
+                  callback:(void (^)(NSDictionary *))callback;
+
 @end
