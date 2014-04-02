@@ -1,4 +1,3 @@
-#
 Pod::Spec.new do |s|
 
   s.name         = "Elrohir"
@@ -6,6 +5,9 @@ Pod::Spec.new do |s|
   s.summary      = "Douban API Client"
   s.authors             = { "Chase Zhang" => "yun.er.run@gmail.com",
                            "Oolong Tea" => "yechunxiao19@gmail.com"}
+
+  s.homepage     = "http://diumoo.net"
+  s.license      = { :type => 'copyright', :file => 'LICENSE'} 
 
   s.ios.deployment_target = '7.0'
   s.osx.deployment_target = '10.8'
