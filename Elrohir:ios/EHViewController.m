@@ -79,14 +79,19 @@
     _fetchEventView = [[UITextView alloc] initWithFrame:CGRectMake(10, 260, self.view.frame.size.width-20, 200)];
     self.fetchEventView.text = @"123";
     [self.view addSubview:_fetchEventView];
-    
-    _APIClient = [[EHAPIClient alloc] init];
+  
+    [EHAPIClient createSharedAPIClientWithClientId:@""
+                                            secret:@""
+                                       redirectURI:@""
+                                           appName:@""
+                                        appVersion:@""];
+    _APIClient = [EHAPIClient shared];
 }
 
 - (void)didReceiveMemoryWarning
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+  [super didReceiveMemoryWarning];
+  // Dispose of any resources that can be recreated.
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
@@ -103,19 +108,19 @@
 }
 
 - (void)fetchEvent{
-    [self.APIClient fetchEventWithId:@"10069638" isLogin:YES callback:^(NSDictionary * list){
+    [self.APIClient fetchEventWithId:@"10069638" callback:^(NSDictionary * list){
         NSLog(@"%@",list);
     }];
 }
 
 - (void)fetchEventUserWished{
-    [self.APIClient fetchEventUserWishedWithId:@"10069638" status:@"ongoing" isLogin:YES callback:^(NSDictionary *list){
+    [self.APIClient fetchEventUserWishedWithId:@"10069638" status:@"ongoing" callback:^(NSDictionary *list){
         NSLog(@"%@",list);
     }];
 }
 
 - (void)fetchEventList{
-    [self.APIClient fetchEventListWithisLogin:YES locId:@"108288" dayType:@"week" type:@"music" callback:^(NSDictionary *list){
+    [self.APIClient fetchEventListWithLocId:@"108288" dayType:@"week" type:@"music" callback:^(NSDictionary *list){
         NSLog(@"%@",list);
     }];
 }

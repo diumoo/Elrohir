@@ -30,10 +30,7 @@
 
 #define EHAPIPlaylistPath @"/v2/fm/playlist"
 
-#define EHAPPClientId @"***REMOVED***"
-#define EHAPPClientSecret @"***REMOVED***"
-#define EHAPPRedirectUri @"http://douban.fm"
-#define EHAPPGrantType @"password"
+#define EHAppGrantType @"password"
 
 #define EHAPIEventPath(ID) [NSString stringWithFormat:@"%@%@", @"/v2/event/", ID]
 #define EHAPIEventParticipantsPath(ID) [NSString stringWithFormat:@"%@%@%@",@"/v2/event/",ID,@"/participants"]
@@ -57,12 +54,60 @@
 #define EHPasswordTooShortError @"password_too_short"
 #define EHDuplicateUidError @"duplicate_uid"
 
+static EHAPIClient *shared;
+
 @interface EHAPIClient()
 @property(retain)NSString *accessToken;
 @property(retain)NSString *refreshToken;
 @end
 
 @implementation EHAPIClient
+
++ (instancetype)shared
+{
+  if (shared==nil) {
+    @throw [NSException exceptionWithName:@"bad_access"
+                                   reason:@"can not access shared object before create"
+                                 userInfo:nil];
+  }
+  return shared;
+}
+
++ (void)createSharedAPIClientWithClientId:(NSString *)clientId
+                                   secret:(NSString *)secret
+                              redirectURI:(NSString *)uri
+                                  appName:(NSString *)appName
+                               appVersion:(NSString *)appVersion
+{
+  shared = [[EHAPIClient alloc] initWithClientId:clientId
+                                          secret:secret
+                                     redirectURI:uri
+                                         appName:appName
+                                      appVersion:appVersion];
+}
+
+- (id)initWithClientId:(NSString *)clientId
+                secret:(NSString *)secret
+           redirectURI:(NSString *)uri
+               appName:(NSString *)appName
+            appVersion:(NSString *)appVersion
+{
+  self = [super init];
+  if (self) {
+    if (!(clientId && secret && uri && appName && appVersion)) {
+      @throw [NSException exceptionWithName:@"invalid_arguments"
+                                     reason:@"all arguments of this function must not be nil"
+                                   userInfo:nil];
+    }
+    _clientId = clientId;
+    _clientSecret = secret;
+    _clientRedirectURI = uri;
+    _appName = appName;
+    _appVersion = appVersion;
+  }
+  return self;
+}
+
 
 #pragma mark - Helpers
 - (AFHTTPClient *)HTTPClient
@@ -154,10 +199,10 @@
     if (self.accessToken) [self logout];
     NSDictionary* params = nil;
     params = @{
-               @"client_id":EHAPPClientId,
-               @"client_secret":EHAPPClientSecret,
-               @"redirect_uri":EHAPPRedirectUri,
-               @"grant_type":EHAPPGrantType,
+               @"client_id":_clientId,
+               @"client_secret":_clientSecret,
+               @"redirect_uri":_clientRedirectURI,
+               @"grant_type":EHAppGrantType,
                @"username":username,
                @"password":password,
                };
