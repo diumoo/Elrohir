@@ -449,11 +449,13 @@ static EHAPIClient *shared;
                @"pt":@(pt),
                @"pb":@(pb),
                @"kbps":@(kbps),
+               @"app_name":_appName,
+               @"version":_appVersion,
                };
     [self sendRequestWithMethod:@"GET"
                         APIPath:EHAPIPlaylistPath
                          params:params
-                  loginRequired:YES
+                  loginRequired:NO
                        callback:callback];
 }
 
