@@ -395,7 +395,6 @@
                            pt:(float)pt
                            pb:(NSInteger)pb
                          kbps:(NSInteger)kbps
-                      isLogin:(BOOL)isLogin
                      callback:(void (^)(NSDictionary *))callback
 {
     NSDictionary *params = nil;
@@ -409,74 +408,68 @@
     [self sendRequestWithMethod:@"GET"
                         APIPath:EHAPIPlaylistPath
                          params:params
-                  loginRequired:isLogin
+                  loginRequired:YES
                        callback:callback];
 }
 
 #pragma mark - Event
 - (void)fetchEventWithId:(NSString *)id
-                 isLogin:(BOOL)isLogin
                 callback:(void (^)(NSDictionary *))callback
 {
     NSDictionary *params = nil;
     [self sendRequestWithMethod:@"GET"
                         APIPath:EHAPIEventPath(id)
                          params:params
-                  loginRequired:isLogin
+                  loginRequired:YES
                        callback:callback];
 }
 
 - (void)fetchEventParticipantsWithId:(NSString *)id
-                             isLogin:(BOOL)isLogin
                             callback:(void (^)(NSDictionary *))callback
 {
     NSDictionary *params = nil;
     [self sendRequestWithMethod:@"GET"
                         APIPath:EHAPIEventParticipantsPath(id)
                          params:params
-                  loginRequired:isLogin
+                  loginRequired:YES
                        callback:callback];
 }
 
 - (void)fetchEventWishersWithId:(NSString *)id
-                        isLogin:(BOOL)isLogin
                        callback:(void (^)(NSDictionary *))callback
 {
     NSDictionary *params = nil;
     [self sendRequestWithMethod:@"GET"
                         APIPath:EHAPIEventWishersPath(id)
                          params:params
-                  loginRequired:isLogin
+                  loginRequired:YES
                        callback:callback];
 }
 
 - (void)fetchEventUserCreatedWithId:(NSString *)id
-                        isLogin:(BOOL)isLogin
                        callback:(void (^)(NSDictionary *))callback
 {
     NSDictionary *params = nil;
     [self sendRequestWithMethod:@"GET"
                         APIPath:EHAPIEventUserCreatedPath(id)
                          params:params
-                  loginRequired:isLogin
+                  loginRequired:YES
                        callback:callback];
 }
 
 - (void)fetchEventUserParticipatedWithId:(NSString *)id
-                                 isLogin:(BOOL)isLogin
                                 callback:(void (^)(NSDictionary *))callback
 {
     NSDictionary *params = nil;
     [self sendRequestWithMethod:@"GET"
                         APIPath:EHAPIEventUserParticipatedPath(id)
                          params:params
-                  loginRequired:isLogin
+                  loginRequired:YES
                        callback:callback];
 }
 
 - (void)fetchEventUserWishedWithId:(NSString *)id
                             status:(NSString*)status
-                           isLogin:(BOOL)isLogin
                           callback:(void (^)(NSDictionary *))callback
 {
     NSDictionary *params = nil;
@@ -485,12 +478,11 @@
     [self sendRequestWithMethod:@"GET"
                         APIPath:EHAPIEventUserWishedPath(id)
                          params:params
-                  loginRequired:isLogin
+                  loginRequired:YES
                        callback:callback];
 }
 
-- (void)fetchEventListWithisLogin:(BOOL)isLogin
-                              locId:(NSString*)locId
+- (void)fetchEventListWithLocId:(NSString*)locId
                           dayType:(NSString*)dayType
                              type:(NSString*)type
                     callback:(void (^)(NSDictionary *))callback
@@ -503,35 +495,32 @@
     [self sendRequestWithMethod:@"GET"
                         APIPath:EHAPIEventListPath
                          params:params
-                  loginRequired:isLogin
+                  loginRequired:YES
                        callback:callback];
 }
 
-- (void)fetchLocationListWithisLogin:(BOOL)isLogin
-                         callback:(void (^)(NSDictionary *))callback
+- (void)fetchLocationListWithCallback:(void (^)(NSDictionary *))callback
 {
     NSDictionary *params = nil;
     [self sendRequestWithMethod:@"GET"
                         APIPath:EHAPILocationListPath
                          params:params
-                  loginRequired:isLogin
+                  loginRequired:YES
                        callback:callback];
 }
 
 - (void)fetchLocationWithId:(NSString *)id
-                isLogin:(BOOL)isLogin
               callback:(void (^)(NSDictionary *))callback
 {
     NSDictionary *params = nil;
     [self sendRequestWithMethod:@"GET"
                         APIPath:EHAPILocationPath(id)
                          params:params
-                  loginRequired:isLogin
+                  loginRequired:YES
                        callback:callback];
 }
 
 - (void)participateEventWithId:(NSString *)id
-                        isLogin:(BOOL)isLogin
                 participateDate:(NSString *)participateDate
                         callback:(void (^)(NSDictionary *))callback
 {
@@ -541,43 +530,40 @@
     [self sendRequestWithMethod:@"POST"
                         APIPath:EHAPIEventParticipantsPath(id)
                          params:params
-                  loginRequired:isLogin
+                  loginRequired:YES
                        callback:callback];
 }
 
 - (void)unParticipateEventWithId:(NSString *)id
-                        isLogin:(BOOL)isLogin
                         callback:(void (^)(NSDictionary *))callback
 {
     NSDictionary *params = nil;
     [self sendRequestWithMethod:@"DELETE"
                         APIPath:EHAPIEventParticipantsPath(id)
                          params:params
-                  loginRequired:isLogin
+                  loginRequired:YES
                        callback:callback];
 }
 
 - (void)wishToJoinEventWithId:(NSString *)id
-                isLogin:(BOOL)isLogin
                 callback:(void (^)(NSDictionary *))callback
 {
     NSDictionary *params = nil;
     [self sendRequestWithMethod:@"POST"
                         APIPath:EHAPIEventWishersPath(id)
                          params:params
-                  loginRequired:isLogin
+                  loginRequired:YES
                        callback:callback];
 }
 
 - (void)unWishToJoinEventWithId:(NSString *)id
-                isLogin:(BOOL)isLogin
                 callback:(void (^)(NSDictionary *))callback
 {
     NSDictionary *params = nil;
     [self sendRequestWithMethod:@"DELETE"
                         APIPath:EHAPIEventWishersPath(id)
                          params:params
-                  loginRequired:isLogin
+                  loginRequired:YES
                        callback:callback];
 }
 
