@@ -77,7 +77,7 @@
     [self.view addSubview:_fetchEventListButton];
     
     _fetchEventView = [[UITextView alloc] initWithFrame:CGRectMake(10, 260, self.view.frame.size.width-20, 200)];
-    self.fetchEventView.text = @"123";
+    self.fetchEventView.text = @"这里显示结果";
     [self.view addSubview:_fetchEventView];
   
     [EHAPIClient createSharedAPIClientWithClientId:@""
@@ -103,25 +103,25 @@
 - (void)login{
     
     [self.APIClient loginWithUsername:self.usernameText.text password:self.passwordText.text callback:^(NSDictionary *list){
-        NSLog(@"%@",list);
+        _fetchEventView.text = [NSString stringWithFormat:@"%@",list];
     }];
 }
 
 - (void)fetchEvent{
     [self.APIClient fetchEventWithId:@"10069638" callback:^(NSDictionary * list){
-        NSLog(@"%@",list);
+        _fetchEventView.text = [NSString stringWithFormat:@"%@",list];
     }];
 }
 
 - (void)fetchEventUserWished{
     [self.APIClient fetchEventUserWishedWithId:@"10069638" status:@"ongoing" callback:^(NSDictionary *list){
-        NSLog(@"%@",list);
+        _fetchEventView.text = [NSString stringWithFormat:@"%@",list];
     }];
 }
 
 - (void)fetchEventList{
     [self.APIClient fetchEventListWithLocId:@"108288" dayType:@"week" type:@"music" callback:^(NSDictionary *list){
-        NSLog(@"%@",list);
+        _fetchEventView.text = [NSString stringWithFormat:@"%@",list];
     }];
 }
 
